@@ -32,6 +32,7 @@ class ListaProdutosAdapter(
         }
 
         fun vincula(produto: Produto) {
+            this.produto = produto
             val nome = binding.produtoItemNome
             nome.text = produto.nome
             val descricao = binding.produtoItemDescricao
